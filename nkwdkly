@@ -50,7 +50,7 @@ fi
    result=$(curl -s http://quan.suning.com/getSysTime.do)   
    datetime=20231007000000   
    datetime=${result:15:18}   
-   datetime2=${result:48:11}   
+   datetime2=${result:48:10}   
    datetime3=$dqsj1   
    echo 当前时间：$datetime
    echo $datetime2   
