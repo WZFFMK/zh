@@ -1,3 +1,5 @@
+bb=xh101
+hpjy=temphp103
 
 Color_Off='\e[0m'       # Text Reset
 BIPurple='\e[1;95m'     # Purple
