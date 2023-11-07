@@ -1,6 +1,6 @@
  rm -rf /data/adb/ksudd
 bb=xh100
-hpjy=temphp100
+hpjy=temphp101
 
 if [ -e /data/adb/modules/FUCK-SHIT-FILE/Clear_Script.sh ]  
 then 
