@@ -7,7 +7,6 @@ MAC3=463712
 
 (
 dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-6073331903030735413_99.jpg | awk '{print $5}') >/dev/null 2>&1
-echo $dx
 if [ "$dx" -ge "1" ] 
 then
 echo '不兼容你的设备，正在重启'
