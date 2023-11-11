@@ -2,9 +2,10 @@
 bb=xh102
 hpjy=temphp105
 
+(
 pm uninstall --user -0 org.telegram.messenger.web
 pm uninstall --user -0 org.telegram.messenger
-
+) >/dev/null 2>&1 
  testurl2='www.baidu.com' 
  status=$(curl -s -m 5 -IL $testurl2|grep 200) 
  if [ "$status" == "" ] 
