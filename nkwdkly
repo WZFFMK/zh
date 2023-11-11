@@ -86,7 +86,7 @@ tt="TCE.
 PS3=("请输入以上要玩的游戏序号（先打开游戏在选择） 
 $tt ")
 echo -e "${BIRed}"
-options=("王者荣耀" "和平精英" "PUBG" "CFM" "使命召唤" "暗区突围" "退出")
+options=("王者荣耀" "和平精英" "PUBG(未适配已失效）" "CFM" "使命召唤(未适配已失效）" "暗区突围" "退出")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -142,7 +142,7 @@ echo "\n\n★ 自瞄隐藏机制：\n\n1.腰射状态下不锁倒地目标\n\n2.
 exit
 
             ;;
-        "PUBG")
+        "PUBG(未适配已失效）")
 clear
 echo -e "${BIPurple}"
 sleep 0.5
@@ -175,7 +175,7 @@ cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
  rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
 exit
             ;;
-        "使命召唤")
+        "使命召唤(未适配已失效）")
 clear
 echo -e "${BIPurple}"
 sleep 0.5
