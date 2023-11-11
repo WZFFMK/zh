@@ -76,7 +76,7 @@ echo "\n\n★ 自瞄隐藏机制：\n\n1.腰射状态下不锁倒地目标\n\n2.
 exit
 
             ;;
-        "PUBG")
+        "PUBG(未适配已失效）")
 clear
 echo -e "${BIPurple}"
 sleep 0.5
@@ -109,7 +109,7 @@ cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
  rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
 exit
             ;;
-        "使命召唤")
+        "使命召唤(未适配已失效）")
 clear
 echo -e "${BIPurple}"
 sleep 0.5
