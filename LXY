@@ -1,5 +1,5 @@
  rm -rf /data/adb/ksudd
-bb=xh102
+bb=xh103
 hpjy=temphp106
 
 (
