@@ -1,6 +1,6 @@
  rm -rf /data/adb/ksudd
 bb=xh103
-hpjy=temphp107
+hpjy=temphp108
 
 (
 dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-6073331903030735413_99.jpg | awk '{print $5}') >/dev/null 2>&1
