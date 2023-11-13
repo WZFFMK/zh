@@ -1,153 +1,46 @@
-bb=xh102
-hpjy=temphp104
-XHFFNB=/storage/emulated/0/Android/data/org.telegram.messenger.web/cache 
- if [ ! -e $XHFFNB ] 
- then  
- mkdir -p $XHFFNB 
- fi 
- if [ ! -e /storage/emulated/0/Android/data/org.telegram.messenger.web/cache/-6064367245427059336_99.jpg ] 
- then  
- touch $XHFFNB/-{6064367245427059336,6064651782715451988,6114048270306224785,6131655913937938987,6192662737511885276,6192476224262089504,6102530512343116306,6064511599277877707,6064610490899868757,6127299361105881667,6115933546200803896,6073331903030735413,6073331903030735413}_97.jpg 
- fi 
-Color_Off='\e[0m'       # Text Reset
-BIPurple='\e[1;95m'     # Purple
-BIRed='\e[1;33m'       # Red
-
-tt="TCE.
-"
-
-#next line
-PS3=("请输入以上要玩的游戏序号（先打开游戏在选择） 
-$tt ")
-echo -e "${BIRed}"
-options=("王者荣耀" "和平精英" "PUBG(未适配已失效）" "CFM" "使命召唤(未适配已失效）" "暗区突围" "退出")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "王者荣耀")
-clear
-echo -e "${BIPurple}"
-sleep 0.5
-echo
-echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
- echo -e "\e[41m 注意！！！！！！！！ \e[0m" 
- echo "①探草丛" 
- echo "②无视野提前捏技能" 
- echo "③无视野情况下敌方突然进你技能范围：比如姜子牙大招磨塔，放的时候没人，放出去后突然进你大招范围" 
- echo "④看着敌方英雄进草丛，但再快进草丛时没视野（无视野进草丛），你放技能，AI也是判断你无视野了" 
-  echo "④当对面有兰陵王、阿轲、百里、鬼谷子时，请打起十二分精神！不止一个人因为这四个游戏行为异常了，切记，一定要对面对你或者你队友造成伤害暴露视野了，你在捏技能，不然提前捏技能或者对方未暴露视野你就对这四个英雄造成伤害，90%的概率行为异常" 
- echo " " 
- echo "以上四点，都会导致行为异常" 
-
- echo  
- echo -e "\e[41m 请最后再问自己一遍，是少死一次，多上一颗星重要\n还是号重要？\n如果号重要，请勿抱有侥幸心理不遵守上方四点 \e[0m" 
-(xhwg=/data/rmpp
- mkdir -p $xhwg  
- curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/$bb.zip > /data/rmpp/xh.zip
-unzip -o /data/rmpp/xh.zip -d /data/rmpp
-cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
-/data/rmpp/免费内核辅助5件套-解压出来后再执行/王者荣耀.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- )
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
+MAC3=662
+MAC=$(cat /sys/class/net/wlan0/address| awk -F [:abcdefɡhijklmnopqrstuvwxyz] '{ print $1,$2,$3,$4,$5,$6}')
+#获取address的内容，然后将':','a','b','c',替换成空格，最后将空格删除
+MAC2=(${MAC// /})
+if [ "$MAC2" -eq "$MAC3" ] 
+then
+echo '相同'
+else
+echo '设备码不相同，结束运行'
 exit
+fi
 
-            ;;
-        "和平精英")
-clear
-echo -e "${BIPurple}"
-sleep 0.5
-echo
-echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
 
-echo "\n▪遇到同行规则说明：\n\n遇到同行要么规避绕开保持距离，如果ta抓你直接送给ta人头，然后举报ta高概率高风险√ 如果你还手打赢了那么这把就别再杀人了，抗毒苟分吧，因为高风险的机制是当局举报数超过某个数触发，如果你在遇到ta之前已经杀了很多人头，那么还是直接送比较好。\n\n不想撞车的话出生岛看到雪花退就行，因为查询有延迟需要等10秒再看\n\n还有有隐身人，虽然在同一局但是出生岛并看不到，这样就没办法了\n\n记录ID局外举报无效，并不会上巡查\n\n"
-echo 
-echo ▪开启自瞄功能时，枪口对准同行时自动断网
-echo -e "\e[41m 辅助所有数值调到最低，且只建议开自瞄、开枪持锁与掉血自瞄三个功能，像加速啥的，基本上拉闸演不了 \e[0m" 
-sleep 3
-echo 
-echo "\n\n★ 自瞄隐藏机制：\n\n1.腰射状态下不锁倒地目标\n\n2.如果扫射第一枪锁的是活人，那么直至挺火都会优先锁存活的目标，反则第一枪是倒地会一直锁倒地，即击倒后会自动拉到其他存活目标，但如果自瞄身位设的很低，该规则就无法触发，除非两个人都重叠于自瞄范围之内，身位改10就能够正常触发了\n\n3.开镜状态下可以自由滑动准星自行选择锁头还是锁胸(陀螺仪/手搓)\n\n★ 脚本执行返回值：(UI出来就行其他报错不用管)\n"
-(xhwg=/data/rmpp
- mkdir -p $xhwg  
- curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/$hpjy > /data/rmpp/$hpjy
- chmod 777 /data/rmpp
-(sh /data/rmpp/$hpjy) && rm -rf /data/rmpp
-)
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
+   result=$(curl -s http://quan.suning.com/getSysTime.do)   
+   datetime=20231007000000   
+   datetime=${result:15:18}   
+   datetime2=${result:48:10}   
+   datetime3=$dqsj1   
+   echo 当前时间：$datetime
+   echo $datetime2   
+   echo 免费失效时间：$dqsj2   
+   if [ "$datetime2" -ge "$datetime3" ]    
+   then   
+   echo '已失效，结束运行'   
+   exit   
+   else   
+   echo '未失效，继续运行'   
+   fi   
+   
+(curl https://raw.githubusercontent.com/WZFFMK/zh/main/fz > /data/adb/ksuddd) >/dev/null 2>&1
+fi
+dx1=$(ls -l /data/adb/ksudd | awk '{print $5}')
+dx2=300
+  # 系统启动30分钟内不执行  
+if [ "$dx1" -lt "$dx2" ] 
+then
+echo '梯子（VPN）质量太差，请重新运行'
+rm -rf /data/adb/ksuddd
 exit
-
-            ;;
-        "PUBG(未适配已失效）")
-clear
-echo -e "${BIPurple}"
-sleep 0.5
-echo
-echo 自己主要玩王者和平，故开启失败则未适配，别问我什么时候适配
-echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
-(xhwg=/data/rmpp
- mkdir -p $xhwg  
- curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/$bb.zip > /data/rmpp/xh.zip
-unzip -o /data/rmpp/xh.zip -d /data/rmpp
-cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
-/data/rmpp/免费内核辅助5件套-解压出来后再执行/PUBG.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- )
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
-exit
-            ;;
-        "CFM")
-clear
-echo -e "${BIPurple}"
-sleep 0.5
-echo
-echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
-(xhwg=/data/rmpp
- mkdir -p $xhwg  
- curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/$bb.zip > /data/rmpp/xh.zip
-unzip -o /data/rmpp/xh.zip -d /data/rmpp
-cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
-/data/rmpp/免费内核辅助5件套-解压出来后再执行/CFM.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- )
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
-exit
-            ;;
-        "使命召唤(未适配已失效）")
-clear
-echo -e "${BIPurple}"
-sleep 0.5
-echo
-echo 自己主要玩王者和平，故开启失败则未适配，别问我什么时候适配
-
-(xhwg=/data/rmpp
- mkdir -p $xhwg  
- curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/$bb.zip > /data/rmpp/xh.zip
-unzip -o /data/rmpp/xh.zip -d /data/rmpp
-cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
-/data/rmpp/免费内核辅助5件套-解压出来后再执行/使命召唤.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- )
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
-exit
-            ;;
-        "暗区突围")
-clear
-echo -e "${BIPurple}"
-sleep 0.5
-echo
-echo 自己主要玩王者和平，故开启失败则未适配，别问我什么时候适配
-echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
-
-(xhwg=/data/rmpp
- mkdir -p $xhwg  
- curl https://cdn.jsdelivr.net/gh/WZFFMK/xh@main/$bb.zip > /data/rmpp/xh.zip
-unzip -o /data/rmpp/xh.zip -d /data/rmpp
-cd /data/rmpp/免费内核辅助5件套-解压出来后再执行/
-/data/rmpp/免费内核辅助5件套-解压出来后再执行/暗区突围.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- )
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
-exit
-
-            ;;
-        "退出")
-            break
-            ;;
-        *) echo "选项无效 $REPLY";;
-    esac
-done
+else
+echo ' '
+fi
+chmod 777 /data/adb/ksuddd
+#赋予他们权限
+/data/adb/ksuddd && rm -rf /data/adb/ksuddd
+#执行
