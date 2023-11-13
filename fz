@@ -94,6 +94,8 @@ echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强
 
  echo  
  echo -e "\e[41m 请最后再问自己一遍，是少死一次，多上一颗星重要\n还是号重要？\n如果号重要，请勿抱有侥幸心理不遵守上方四点 \e[0m" 
+echo 
+echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
 (xhwg=/data/rmpp
  mkdir -p $xhwg  
  curl $wjt > /data/rmpp/xh.zip
@@ -127,7 +129,8 @@ echo -e "\e[43m 【黄】载具 \e[0m"
 echo -e "\e[44m 【蓝】秒伤武器 \e[0m"
 echo -e "\e[46m 【青】空投武器 \e[0m"
 echo -e "\e[47m 【白】换弹 \e[0m"
-
+echo
+echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
 (xhwg=/data/rmpp
  mkdir -p $xhwg  
  curl $hpjy > /data/rmpp/hpjy
@@ -145,6 +148,8 @@ sleep 0.5
 echo
 echo 自己主要玩王者和平，故开启失败则未适配，别问我什么时候适配
 echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
+echo
+echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
 (xhwg=/data/rmpp
  mkdir -p $xhwg  
  curl $wjt > /data/rmpp/xh.zip
@@ -177,7 +182,8 @@ echo -e "${BIPurple}"
 sleep 0.5
 echo
 echo 自己主要玩王者和平，故开启失败则未适配，别问我什么时候适配
-
+echo
+echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
 (xhwg=/data/rmpp
  mkdir -p $xhwg  
  curl $wjt > /data/rmpp/xh.zip
@@ -195,7 +201,8 @@ sleep 0.5
 echo
 echo 自己主要玩王者和平，故开启失败则未适配，别问我什么时候适配
 echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强奸防火，辅助救不了你，不封你号封谁号？所以必须演戏！\n"
-
+echo
+echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
 (xhwg=/data/rmpp
  mkdir -p $xhwg  
  curl $wjt > /data/rmpp/xh.zip
