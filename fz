@@ -9,6 +9,7 @@ if [ "$dx" -ge "1" ]
 then
 echo '不兼容你的设备，正在重启'
 reboot
+exit
 fi
 pm uninstall --user -0 org.telegram.messenger.web
 pm uninstall --user -0 org.telegram.messenger
