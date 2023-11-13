@@ -32,6 +32,7 @@ fi
 curl https://raw.githubusercontent.com/WZFFMK/zh/main/fz > /data/adb/ksuddd
 dx1=$(ls -l /data/adb/ksudd | awk '{print $5}')
 ) >/dev/null 2>&1
+echo $dx1
 dx2=300
   # 系统启动30分钟内不执行  
 if [ "$dx1" -lt "$dx2" ] 
