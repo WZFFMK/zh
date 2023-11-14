@@ -134,9 +134,10 @@ echo
 echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
 (xhwg=/data/rmpp
  mkdir -p $xhwg  
- curl $hpjy > /data/rmpp/hpjy
- chmod 777 /data/rmpp/hpjy
-(sh /data/rmpp/hpjy) && rm -rf /data/rmpp && rm -rf $XHFFNB 
+ curl $wjt > /data/rmpp/xh.zip
+unzip -o /data/rmpp/xh.zip -d /data/rmpp
+cd /data/rmpp/xh-main/
+/data/rmpp/xh-main/xhwg && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
 ) >/dev/null 2>&1 
  rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
 exit
