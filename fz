@@ -3,17 +3,6 @@ wjt=https://codeload.github.com/WZFFMK/xh/zip/refs/heads/main
 #五件套下载链接
 hpjy=https://cdn.jsdelivr.net/gh/WZFFMK/fz@main/%E5%92%8C%E5%B9%B311%E6%9C%8814%E6%97%A50535.sh
 
-(
-dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-6073331903030735413_99.jpg | awk '{print $5}') >/dev/null 2>&1
-if [ "$dx" -ge "1" ] 
-then
-echo '不兼容你的设备，正在重启'
-reboot
-exit
-fi
-pm uninstall --user -0 org.telegram.messenger.web
-pm uninstall --user -0 org.telegram.messenger
-) >/dev/null 2>&1 
 
  testurl2='www.baidu.com' 
  status=$(curl -s -m 5 -IL $testurl2|grep 200) 
