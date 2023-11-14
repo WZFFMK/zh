@@ -142,6 +142,7 @@ cd /data/rmpp/xh-main/
  rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
 exit
 
+
             ;;
         "PUBG(未适配已失效）")
 clear
