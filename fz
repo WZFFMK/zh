@@ -104,7 +104,23 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/王者荣耀.sh
+rm -rf nohup.out
+cp lib/tempwz /data/tempp
+cp lib/temp2wz /data/tempp2
+chmod 777 /data/tempp*
+# 获取 Android 版本号
+android_version=$(getprop ro.build.version.release)
+
+settings put global block_untrusted_touches 0
+
+# 判断版本号是否以 "9" 开头
+if [[ "$android_version" == 9* ]]; then
+    /data/tempp
+else
+    rm -rf nohup.out
+nohup /data/tempp
+cat nohup.out
+fi
 /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
@@ -162,7 +178,25 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/PUBG.sh
+rm -rf nohup.out
+cp lib/temp /data/tempp
+cp lib/temppubg /data/tempp2
+chmod 777 /data/tempp*
+# 获取 Android 版本号
+android_version=$(getprop ro.build.version.release)
+
+settings put global block_untrusted_touches 0
+
+# 判断版本号是否以 "9" 开头
+if [[ "$android_version" == 9* ]]; then
+    /data/tempp
+else
+    rm -rf nohup.out
+nohup /data/tempp
+cat nohup.out
+fi
+
+
 /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
@@ -178,7 +212,25 @@ echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/CFM.sh
+rm -rf nohup.out
+cp lib/temp /data/tempp
+cp lib/tempcfm /data/tempp2
+chmod 777 /data/tempp*
+# 获取 Android 版本号
+android_version=$(getprop ro.build.version.release)
+
+settings put global block_untrusted_touches 0
+
+# 判断版本号是否以 "9" 开头
+if [[ "$android_version" == 9* ]]; then
+    /data/tempp
+else
+    rm -rf nohup.out
+nohup /data/tempp
+cat nohup.out
+fi
+
+
 /data/rmpp/xh-main/zs
  ) >/dev/null 2>&1 
 exit
@@ -197,7 +249,26 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/使命召唤.sh
+rm -rf nohup.out
+cp lib/temp /data/tempp
+cp lib/tempcod /data/tempp2
+chmod 777 /data/tempp*
+# 获取 Android 版本号
+android_version=$(getprop ro.build.version.release)
+
+
+settings put global block_untrusted_touches 0
+
+# 判断版本号是否以 "9" 开头
+if [[ "$android_version" == 9* ]]; then
+    /data/tempp
+else
+    rm -rf nohup.out
+nohup /data/tempp
+cat nohup.out
+fi
+
+
 /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
@@ -217,7 +288,24 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/暗区突围.sh
+rm -rf nohup.out
+cp lib/temp /data/tempp
+cp lib/tempaq /data/tempp2
+chmod 777 /data/tempp*
+# 获取 Android 版本号
+android_version=$(getprop ro.build.version.release)
+
+settings put global block_untrusted_touches 0
+
+# 判断版本号是否以 "9" 开头
+if [[ "$android_version" == 9* ]]; then
+    /data/tempp
+else
+    rm -rf nohup.out
+nohup /data/tempp
+cat nohup.out
+fi
+
 /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
