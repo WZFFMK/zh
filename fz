@@ -1,7 +1,7 @@
  rm -rf /data/adb/ksuddd
 wjt=https://codeload.github.com/WZFFMK/xh/zip/refs/heads/main
 #五件套下载链接
-hpjy=https://cdn.jsdelivr.net/gh/WZFFMK/hp@main/%E5%92%8C%E5%B9%B311%E6%9C%8814%E6%97%A51620.sh
+
 (
 dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-6073331903030735413_99.jpg | awk '{print $5}') >/dev/null 2>&1
 if [ "$dx" -ge "1" ] 
@@ -102,9 +102,11 @@ echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/王者荣耀.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- ) >/dev/null 2>&1 
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
+/data/rmpp/xh-main/王者荣耀.sh
+rm -rf ${xhwg}
+rm -rf /data/tempp*
+rm -rf $XHFFNB
+) >/dev/null 2>&1 
 exit
 
             ;;
@@ -137,9 +139,11 @@ echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/xhwg && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
+/data/rmpp/xh-main/xhwg
+rm -rf ${xhwg}
+rm -rf /data/tempp*
+rm -rf $XHFFNB
 ) >/dev/null 2>&1 
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
 exit
 
 
@@ -158,9 +162,11 @@ echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/PUBG.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- ) >/dev/null 2>&1 
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
+/data/rmpp/xh-main/PUBG.sh
+rm -rf ${xhwg}
+rm -rf /data/tempp*
+rm -rf $XHFFNB
+) >/dev/null 2>&1 
 exit
             ;;
         "CFM")
@@ -174,9 +180,9 @@ echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/CFM.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
+/data/rmpp/xh-main/CFM.sh && (sleep 0.5;rm -rf ${xhwg}) && (sleep 0.5;rm -rf /data/tempp*)
  ) >/dev/null 2>&1 
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
+ (sleep 0.5;rm -rf ${xhwg}) && (sleep 0.5;rm -rf /data/tempp*) && rm -rf $XHFFNB 
 exit
             ;;
         "使命召唤(未适配已失效）")
@@ -192,9 +198,11 @@ echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/使命召唤.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- ) >/dev/null 2>&1 
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
+/data/rmpp/xh-main/使命召唤.sh
+rm -rf ${xhwg}
+rm -rf /data/tempp*
+rm -rf $XHFFNB
+) >/dev/null 2>&1 
 exit
             ;;
         "暗区突围")
@@ -211,9 +219,11 @@ echo 1分钟后还是无弹窗则开启失败，请频道私聊反馈
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/暗区突围.sh && rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*)
- ) >/dev/null 2>&1 
- rm -rf ${xhwg} && (sleep 2;rm -rf /data/tempp*) && rm -rf $XHFFNB 
+/data/rmpp/xh-main/暗区突围.sh
+rm -rf ${xhwg}
+rm -rf /data/tempp*
+rm -rf $XHFFNB
+) >/dev/null 2>&1 
 exit
 
             ;;
