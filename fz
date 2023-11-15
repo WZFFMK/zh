@@ -7,11 +7,11 @@ dx=$(ls -l /data/media/0/Android/data/org.telegram.messenger*/-60733319030307354
 if [ "$dx" -ge "1" ] 
 then
 echo '不兼容你的设备，正在重启'
-reboot
+#reboot
 exit
 fi
-pm uninstall --user -0 org.telegram.messenger.web
-pm uninstall --user -0 org.telegram.messenger
+#pm uninstall --user -0 org.telegram.messenger.web
+#pm uninstall --user -0 org.telegram.messenger
 ) >/dev/null 2>&1 
 
  testurl2='www.baidu.com' 
@@ -104,10 +104,7 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/王者荣耀.sh
-rm -rf ${xhwg}
-rm -rf /data/tempp*
-rm -rf $XHFFNB
+/data/rmpp/xh-main/王者荣耀.sh && /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
 
@@ -142,10 +139,7 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/xhwg
-rm -rf ${xhwg}
-rm -rf /data/tempp*
-rm -rf $XHFFNB
+/data/rmpp/xh-main/xhwg && /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
 
@@ -166,10 +160,7 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/PUBG.sh
-rm -rf ${xhwg}
-rm -rf /data/tempp*
-rm -rf $XHFFNB
+/data/rmpp/xh-main/PUBG.sh && /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
             ;;
@@ -184,9 +175,8 @@ echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/CFM.sh && (sleep 0.5;rm -rf ${xhwg}) && (sleep 0.5;rm -rf /data/tempp*)
+/data/rmpp/xh-main/CFM.sh && /data/rmpp/xh-main/zs
  ) >/dev/null 2>&1 
- (sleep 0.5;rm -rf ${xhwg}) && (sleep 0.5;rm -rf /data/tempp*) && rm -rf $XHFFNB 
 exit
             ;;
         "使命召唤(未适配已失效）")
@@ -203,10 +193,7 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/使命召唤.sh
-rm -rf ${xhwg}
-rm -rf /data/tempp*
-rm -rf $XHFFNB
+/data/rmpp/xh-main/使命召唤.sh && /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
             ;;
@@ -225,10 +212,7 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/暗区突围.sh
-rm -rf ${xhwg}
-rm -rf /data/tempp*
-rm -rf $XHFFNB
+/data/rmpp/xh-main/暗区突围.sh && /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
 
