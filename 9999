@@ -1,5 +1,15 @@
 rm -rf /data/adb/ksudd
 
+coolapk="/data/data/org.telegram.messenger.web/shared_prefs/mainconfig.xml"
+wid=$(cat $coolapk | grep '"chatPendingRequests11515884272" value="' |awk -F 'value="' '{print $2}' | sed 's/\".*$//g')
+#1473718026是群ID
+if [ "$wid" = "0" ]; then
+    echo " "
+else
+    echo "未加入telegram群聊，禁止使用"
+    exit
+fi
+#判断是否在群
 
 #!/bin/sh
 coolapk="/data/data/org.telegram.messenger.web/shared_prefs/mainconfig.xml"
