@@ -106,7 +106,7 @@ unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
 /data/rmpp/xh-main/王者荣耀.sh
 /data/rmpp/xh-main/zs
-)
+) >/dev/null 2>&1 
 exit
 
             ;;
@@ -142,7 +142,7 @@ unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
 /data/rmpp/xh-main/xhwg
 /data/rmpp/xh-main/zs
-)
+) >/dev/null 2>&1 
 exit
 
 
