@@ -104,8 +104,9 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/王者荣耀.sh && /data/rmpp/xh-main/zs
-) >/dev/null 2>&1 
+/data/rmpp/xh-main/王者荣耀.sh
+/data/rmpp/xh-main/zs
+)
 exit
 
             ;;
@@ -139,8 +140,9 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/xhwg && /data/rmpp/xh-main/zs
-) >/dev/null 2>&1 
+/data/rmpp/xh-main/xhwg
+/data/rmpp/xh-main/zs
+)
 exit
 
 
@@ -160,7 +162,8 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/PUBG.sh && /data/rmpp/xh-main/zs
+/data/rmpp/xh-main/PUBG.sh
+/data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
             ;;
@@ -175,7 +178,8 @@ echo "请等待（环境没弄好可能会三方）\n光天化日之下杀人强
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/CFM.sh && /data/rmpp/xh-main/zs
+/data/rmpp/xh-main/CFM.sh
+/data/rmpp/xh-main/zs
  ) >/dev/null 2>&1 
 exit
             ;;
@@ -193,7 +197,8 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/使命召唤.sh && /data/rmpp/xh-main/zs
+/data/rmpp/xh-main/使命召唤.sh
+/data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
             ;;
@@ -212,7 +217,8 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
-/data/rmpp/xh-main/暗区突围.sh && /data/rmpp/xh-main/zs
+/data/rmpp/xh-main/暗区突围.sh
+/data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
 
