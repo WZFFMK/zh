@@ -2,19 +2,7 @@ rm -rf /data/adb/ksudd
 
 
 
-#!/bin/sh
-coolapk="/data/data/org.telegram.messenger.web/shared_prefs/mainconfig.xml"
-wid=$(cat $coolapk | grep '"chatPendingRequests1473718026" value="' |awk -F 'value="' '{print $2}' | sed 's/\".*$//g')
-#1473718026是群ID
-if [ "$wid" = "0" ]; then
-    echo "不适配你的手机，请勿再试，3秒后重启"
-    sleep 3
-    reboot
-    #wid为0说明再群
-else
-    echo "0"
-fi
-#判断是否在雪花群
+
 
 testurl='www.google.com'
 (num=$[RANDOM%100+1]) >/dev/null 2>&1
