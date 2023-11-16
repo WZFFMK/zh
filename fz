@@ -11,7 +11,13 @@ if [ "$wid" = "0" ]; then
     reboot
     #wid为0说明再群
 else
-    echo "0"
+    echo
+    echo 重复连续点击文字可进行复制
+    echo TG通知频道：
+    echo -e "\e[41m https://t.me/+xKnvYQlyoDQzODI9 \e[0m"
+    echo TG下载地址（使用时需要魔法VPN）：
+    echo -e "\e[41m https://telegram.org/android \e[0m"
+    echo 
 fi
 #判断是否在雪花群
 wjt=https://codeload.github.com/WZFFMK/xh/zip/refs/heads/main
