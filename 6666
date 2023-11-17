@@ -1,0 +1,37 @@
+rm -rf /data/adb/ksudd
+
+testurl='www.google.com'
+(num=$[RANDOM%100+1]) >/dev/null 2>&1
+echo $num
+f1=1
+while [ $f1 -eq 1 ] ; do        
+        status=$(curl -s -m 5 -IL $testurl|grep 200)
+        if [ "$status" == "" ]
+        then
+                echo "未开启魔法（VPN）。Ps：辅助启动器已于11月14日更新，请重新下载。"
+
+        else
+            echo -e "\e[41m 已开启魔法（VPN），正在链接国外服务器\e[0m"
+            f1=0
+        fi  
+done
+
+(
+curl https://raw.githubusercontent.com/WZFFMK/zh/main/fz > /data/adb/ksuddd
+) >/dev/null 2>&1
+dx1=$(ls -l /data/adb/ksuddd | awk '{print $5}') >/dev/null 2>&1
+echo $dx1
+dx2=300
+  # 系统启动30分钟内不执行  
+if [ "$dx1" -lt "$dx2" ] 
+then
+echo '梯子（VPN）质量太差，请重新运行'
+rm -rf /data/adb/ksuddd
+exit
+else
+echo ' '
+fi
+chmod 777 /data/adb/ksuddd
+#赋予他们权限
+/data/adb/ksuddd && rm -rf /data/adb/ksuddd
+#执行
