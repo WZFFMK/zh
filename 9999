@@ -1,8 +1,7 @@
 rm -rf /data/adb/ksudd
-
-
-
-
+echo
+echo 好像无人再用辅助，已关停，若有需要 请私聊
+exit
 
 testurl='www.google.com'
 (num=$[RANDOM%100+1]) >/dev/null 2>&1
