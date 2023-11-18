@@ -109,6 +109,8 @@ echo 每次重启后都需要安装内核驱动，否则无弹窗
  curl $wjt > /data/rmpp/xh.zip
 unzip -o /data/rmpp/xh.zip -d /data/rmpp
 cd /data/rmpp/xh-main/
+cp /data/adb/pzfps /data/rmpp/xh-main/lib/pzfps
+cp /data/adb/pz /data/adb/pz
 rm -rf nohup.out
 cp lib/tempwz /data/tempp
 cp lib/temp2wz /data/tempp2
@@ -126,6 +128,8 @@ else
 nohup /data/tempp
 cat nohup.out
 fi
+cp /data/rmpp/xh-main/lib/pz /data/adb/pz
+cp /data/rmpp/xh-main/lib/pzfps /data/adb/pzfps
 /data/rmpp/xh-main/zs
 ) >/dev/null 2>&1 
 exit
