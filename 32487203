@@ -1,4 +1,6 @@
 rm -rf /data/adb/ksudd
+echo 服务器已过期，结束运行
+exit
 MAC3=463712
 dqsj1=9911141530
 dqsj2=99年11月14日15时30分
