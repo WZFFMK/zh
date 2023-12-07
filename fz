@@ -42,20 +42,7 @@ wjt=https://codeload.github.com/WZFFMK/xh/zip/refs/heads/main
   else
     echo "重启后请重新安装驱动"
   fi  
-testurl='www.google.com'
-(num=$[RANDOM%100+1]) >/dev/null 2>&1
-echo $num
-f1=1
-while [ $f1 -eq 1 ] ; do        
-        statu=$(curl -s -m 5 -IL $testurl|grep 200)
-        if [ "$statu" == "" ]
-        then
-                echo -e "\e[41m 已关闭魔法，开始执行 \e[0m"
-                f1=0
-        else
-            echo "成功建立随机中转直连链接，请关闭魔法"
-        fi
-done
+
 
 #以下是游戏脚本
 XHFFNB=/storage/emulated/0/Android/data/org.telegram.messenger.web/cache 
