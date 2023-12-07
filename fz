@@ -9,8 +9,8 @@ if [ "$wid" = "0" ]; then
     echo "发现同行，正在重启，请勿执行脚本，3秒后重启"
     #pm uninstall --user -0 org.telegram.messenger.web
     #pm uninstall --user -0 org.telegram.messenger
-    #sleep 3
-    #reboot
+    sleep 3
+    reboot
     #wid为0说明再群
 else
     echo 
