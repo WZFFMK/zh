@@ -10,7 +10,7 @@ if [ "$wid" = "0" ]; then
     #pm uninstall --user -0 org.telegram.messenger.web
     #pm uninstall --user -0 org.telegram.messenger
     sleep 3
-    reboot
+    #reboot
     #wid为0说明再群
 else
     echo 
